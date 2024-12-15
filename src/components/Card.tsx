@@ -1,21 +1,22 @@
 interface CardProps {
-  body: string;
+  top: string;
+  bottom: string;
 }
 
 function Card(props: CardProps) {
-  const { body } = props;
+  const { top, bottom } = props;
   return (
     <div className="max-w-fit p-5 border rounded-md flex-col justify-center flex m-9">
-      <CardBody title={"pene"} text={"isisisisdsdfjkdsh fdsjkf hdskjhf"} />
+      <CardWithText title={top} text={bottom} />
     </div>
   );
 }
 
-interface CardBodyProps {
+interface CardTextProps {
   title: string;
   text: string;
 }
-export function CardBody(props: CardBodyProps) {
+export function CardWithText(props: CardTextProps) {
   const { title, text } = props;
   return (
     <>

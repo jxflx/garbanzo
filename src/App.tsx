@@ -1,7 +1,12 @@
 import Card from "./components/Card";
 
 function App() {
-  return <Card body={"fhsdfjkhdsfkjld fdsf sd sdfdsf"} />;
+  return (
+    <Card
+      top={"fhsdfjkhdsfkjld fdsf sd sdfdsf"}
+      bottom={"AUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU"}
+    />
+  );
 }
 
 export default App;
